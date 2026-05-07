@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Para Minha Ana ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="musica" loop><source src="musica.mp3" type="audio/mp3"></audio>
+
+    <section id="pagina1">
+        <div class="vidro">
+            <div class="fotos-container">
+                <img src="foto.jpg" class="foto-perfil">
+                <img src="foto.jpg3.jpg" class="foto-perfil">
+            </div>
+            <h1>Oi Ana... 🌸</h1>
+            <div class="mensagem-branca">
+                <p>Espero que a gente dê certo, tenho tantos planos com você amor, as horas que fiquei ao seu lado já tirei a conclusão que é você!!!</p>
+                <p>Isso é apenas uma pequena demonstração ok ? tava enferrujado nisso aqui kkk enfim , ainda tem muita coisa por vir, aguarde…</p>
+            </div>
+            <button class="botao-magico" onclick="proximaPagina()">Clique aqui, gata ✨</button>
+        </div>
+    </section>
+
+    <section id="pagina2" style="display: none;" onclick="criarCoracaoExplosao(event)">
+        <div class="topo-fixo">
+            <h2 class="texto-vermelho-topo"> TIREI SEU SORRISO ?KKK
+        ❤️</h2>
+        </div>
+
+        <img src="foto.jpg1.jpg" class="foto-mural drag">
+        <img src="foto.jpg4.jpg" class="foto-mural drag">
+        <img src="foto.jpg5.jpg" class="foto-mural drag">
+        <img src="foto.jpg" class="foto-mural drag">
+
+        <div class="chuva-flores" id="chuva"></div>
+
+        <div class="centro-surpresa">
+            <canvas id="heartCanvas"></canvas>
+        </div>
+        
+        <button onclick="toggleMusica()" id="btnMusica" class="btn-musica-fixo">🎵 Ativar Som</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
